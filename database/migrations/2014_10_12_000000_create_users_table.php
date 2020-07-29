@@ -22,7 +22,7 @@ class CreateUsersTable extends Migration
             $table->string('password');
             $table->integer('gerencia_id')->nullable();
             $table->integer('equipe_id')->nullable();
-            $table->boolean('ativo')->default('t');
+            $table->boolean('ativo')->default(true);
             $table->rememberToken();
             $table->timestamps();
         });
