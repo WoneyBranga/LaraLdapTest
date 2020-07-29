@@ -24,3 +24,6 @@ Adequar a tabela o arquivo de migrate da tabela de usuários original para atende
 No exemplo abaixo criamos a coluna username e a colocamos como unique, as colunas gerencia_id, equipe_id e ativo, as primeiras com possibilidade de ser nulas e a segunda com o valor padrão verdadeiro.
 
 `php artisan migrate`
+
+5- Adequar o controller de login
+Alterar o arquivo /var/www/teste/app/Http/Controllers/Auth/LoginController.php para identificar o campo username ao invés do email.
