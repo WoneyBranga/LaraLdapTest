@@ -27,3 +27,7 @@ No exemplo abaixo criamos a coluna username e a colocamos como unique, as coluna
 
 5- Adequar o controller de login
 Alterar o arquivo /var/www/teste/app/Http/Controllers/Auth/LoginController.php para identificar o campo username ao invés do email.
+
+6- Adequar a página de login
+Alterar o arquivo /var/www/teste/resources/views/auth/login.blade.php para usar o username no lugar de email.
+
