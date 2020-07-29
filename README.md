@@ -31,3 +31,5 @@ Alterar o arquivo /var/www/teste/app/Http/Controllers/Auth/LoginController.php p
 6- Adequar a página de login
 Alterar o arquivo /var/www/teste/resources/views/auth/login.blade.php para usar o username no lugar de email.
 
+7- Validar credenciais no LDAP
+Para possibilitar a validação de login no Active Directory ALVO, alterar o método validateCredentials de ./vendor/laravel/framework/src/Illuminate/Auth/EloquentUserProvider.php
