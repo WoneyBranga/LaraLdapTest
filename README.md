@@ -33,3 +33,7 @@ Alterar o arquivo /var/www/teste/resources/views/auth/login.blade.php para usar 
 
 7- Validar credenciais no LDAP
 Para possibilitar a validação de login no Active Directory ALVO, alterar o método validateCredentials de ./vendor/laravel/framework/src/Illuminate/Auth/EloquentUserProvider.php
+
+> Atencao!
+> ajustar Configuracao LDAP(*/etc/ldap/ldap.conf*) para conter parametro `TLS_REQCERT never`
+> Assim conseguimos realizar testes com TLS habilitado.
